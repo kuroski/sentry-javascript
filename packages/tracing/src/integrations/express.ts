@@ -79,7 +79,7 @@ export class Express implements Integration {
    */
   public setupOnce(): void {
     if (!this._router) {
-      logger.error('ExpressIntegration is missing an Express instance');
+      logger.error('Express Integration is missing an Express instance');
       return;
     }
     instrumentMiddlewares(this._router, this._methods);
